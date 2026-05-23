@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>我的个人网页</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card {
+            background: white;
+            padding: 40px 30px;
+            margin: 20px;
+            border-radius: 32px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            max-width: 500px;
+            text-align: center;
+            animation: fadeIn 0.8s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        .emoji {
+            font-size: 64px;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            font-size: 16px;
+            border-radius: 40px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: scale(1.02);
+        }
+        .contact {
+            margin-top: 25px;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="emoji">🎉</div>
+        <h1>你好，欢迎光临！</h1>
+        <p>这是我的第一个个人网页。<br>扫描二维码的朋友，很高兴认识你 👋</p>
+        <button class="btn" onclick="alert('🎈 谢谢点击！欢迎常来～')">点我有惊喜</button>
+        <div class="contact">
+            📧 联系我：你的邮箱@example.com
+        </div>
+    </div>
+</body>
+</html>
